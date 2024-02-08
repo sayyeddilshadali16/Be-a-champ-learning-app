@@ -1,0 +1,18 @@
+.interview-question-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.interview-question-container span{
+   color: #10A37F;
+}
+.interview-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 3rem;
+}
+@media only screen and (max-width: 578px) {
+    .interview-title{
+        font-size: 2rem;
+    }
+}

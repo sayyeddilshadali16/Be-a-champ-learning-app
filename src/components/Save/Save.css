@@ -1,0 +1,97 @@
+.save-container {
+  padding-top: 100px;
+  height: fit-content;
+}
+.save-main-container{
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+}
+.saved-jobs button {
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #10a37f;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 150px;
+}
+.more-jobs p {
+  color: rgb(177, 177, 177);
+  text-decoration: underline;
+  font-size: 16px;
+}
+.save-job-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.save-job-title span{
+    color: #10a37f;
+}
+.save-job-button-container{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.apply-link{
+  text-decoration: none;
+  color: white;
+}
+.apply-link:visited{
+  color: white;
+}
+.saved-job-title-company{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1rem;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+.saved-jobs{
+  width: 75%;
+  border: 1px solid rgb(201, 201, 201);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 10px;
+}
+.saved-job-title-company h3{
+  margin-top: 1.5rem;
+}
+@media only screen and (max-width: 578px){
+  .save-main-container{
+    width: 83%;
+  }
+  .saved-jobs{
+    width: 100%;
+    padding-top: .5rem;
+  }
+  .save-job-button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .saved-job-title-company h1{
+    margin-top: 0rem;
+  }
+  .save-container{
+    margin-bottom: 20rem;
+  }
+  .emptySave h3{
+    margin-top: 1rem;
+  }
+}

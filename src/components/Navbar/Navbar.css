@@ -1,0 +1,162 @@
+.routeLink {
+  text-decoration: none;
+  color: gray;
+}
+
+.routeLink:visited {
+  color: gray;
+}
+.navbar {
+  height: 60px;
+  width: 98.9vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ececec37;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  color: gray;
+  z-index: 10;
+}
+.logo-container-responsive {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+  font-size: 16px;
+}
+
+.logo {
+  margin-left: 100px;
+  font-size: 30px;
+  font-weight: 900;
+  color: #10a37f;
+}
+.container {
+  height: 100vh;
+  width: 98.9vw;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 100px;
+  font-size: 24px;
+}
+sup {
+  background: #10a37f;
+  color: white;
+  font-size: 13px;
+  border-radius: 50%;
+  padding: 0 4px;
+  position: relative;
+  top: -7px;
+  right: 10px;
+}
+.logo-span {
+  color: black;
+}
+.nav-btn {
+  font-size: 24px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .logo-responsive {
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    z-index: 16;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 98.9vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #ececec37;
+    backdrop-filter: blur(20px);
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .responsive-nav {
+    transform: none;
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .logo-container-responsive {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0.8rem;
+  }
+  .logo-responsive {
+    margin-left: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #10a37f;
+  }
+  .logo-span-responsive {
+    color: black;
+  }
+  .logo-container {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .responsive-nav {
+    width: 100%;
+    height: 100%;
+  }
+  .navLinks {
+    font-size: 2.6rem;
+    margin-right: 0rem;
+    position: absolute;
+    top: 8rem;
+  }
+  .nav-icons {
+    margin-right: 0;
+    font-size: 2.6rem;
+  }
+  .nav-icons sup {
+    background: #10a37f;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    padding: 0 6px;
+    position: relative;
+    top: -14px;
+    right: 16px;
+  }
+  .logo-responsive{
+    margin-left: 3rem;
+  }
+}
